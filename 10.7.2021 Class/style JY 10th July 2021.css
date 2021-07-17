@@ -1,0 +1,18 @@
+.parent{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: crimson;
+    text-align: center;
+}
+.child{
+    display: inline-block;
+    background-color: crimson;
+    width: 504px;
+    height:60px;
+    font-weight: bold;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.child:hover{
+    background-color: rgb(250, 154, 10);
+}
