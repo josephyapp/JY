@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator by JY</title>
+    <meta name="description" content="A dynamic calculator created by JY">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jystyle.css">
+</head>
+
+<body>
+
+    <div class="AAA">
+        <h1>CALCULATOR</h1>
+    </div>
+
+    <div class="BBB">
+        <center>
+            <label for="">Insert 1st Number</label>
+            <br>
+            <input id="number1" type="number" value=""><br>
+            <br>
+            <label for="">Insert 2nd Number</label>
+            <br>
+            <input id="number2" type="number" value=""><br>
+            <br>
+        </center>
+    </div>
+
+    <div class="CDCD">
+        <center>
+            <div class="buttontitle">
+                <label for="">Choose an action</label>
+            </div>
+
+            <div class="buttons">
+                <button class="button button1" onclick="Addition()">Addition (+)</button>
+                <button class="button button2" onclick="Substract()">Substract (-)</button>
+                <button class="button button3" onclick="Multiply()">Multiply (X)</button>
+                <button class="button button4" onclick="Divide()">Divide (/)</button>
+            </div>
+        </center>
+    </div>
+
+    <div class="CCC">
+        <div class="CCCC">
+            <center>
+                <h1>RESULTS</h1>
+            </center>
+        </div>
+
+        <div class="CCCCC">
+            <center>
+                <h1 id="results"></h1>
+            </center>
+        </div>
+    </div>
+
+    <script>
+        function Addition() {
+
+            var a = document.getElementById('number1').value;
+            var b = document.getElementById('number2').value;
+            var value = Number(a) + Number(b)
+            document.getElementById('results').innerHTML = value
+        }
+
+        function Substract() {
+
+            var a = document.getElementById('number1').value;
+            var b = document.getElementById('number2').value;
+            var value = Number(a) - Number(b)
+            document.getElementById('results').innerHTML = value
+        }
+
+        function Multiply() {
+
+            var a = document.getElementById('number1').value;
+            var b = document.getElementById('number2').value;
+            var value = Number(a) * Number(b)
+            document.getElementById('results').innerHTML = value
+        }
+
+        function Divide() {
+
+            var a = document.getElementById('number1').value;
+            var b = document.getElementById('number2').value;
+            var value = Number(a) / Number(b)
+            document.getElementById('results').innerHTML = value
+        }
+    </script>
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>
